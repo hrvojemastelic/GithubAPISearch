@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:layout_margin="4dp"
+    tools:context=".repodetails.RepositoryDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repo_name"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/repo_imageview"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:id="@+id/repo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repositorie name "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:id="@+id/repo_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="owner"
+            app:layout_constraintTop_toBottomOf="@+id/repo_imageview" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"
+            android:id="@+id/repo_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repo_owner" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/repo_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="last update"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repo_date" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:id="@+id/repo_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repo_update" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:id="@+id/repo_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="language"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repo_description" />
+
+        <TextView
+            android:id="@+id/repo_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autoLink="web"
+            android:text="linkasdasdasd"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repo_language" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
